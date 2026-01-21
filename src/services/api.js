@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://lms-backend-ztnc.onrender.com"
+  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api"
 });
 
 
